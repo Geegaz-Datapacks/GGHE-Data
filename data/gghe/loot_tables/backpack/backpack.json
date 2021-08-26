@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"translate": "gghe.item.backpack.name",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc:{id:'backpack',from:'geegaz:gghe',traits:[\"item\",\"backpack\"]},CustomModelData:1707210}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{gghe:{Backpack:{Inventory:[],CustomModelData:1707210,Open:false}}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+		"trigger": {
+			"trigger": "item_used_on_block",
+			"conditions": {
+				"item": {
+					"nbt": "{ctc:{id:'cooking_pot',from:'geegaz:gghe'}}"
+				},
+				"location": {
+					"block": {
+						"tag": "campfires"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "gghe:block/cooking_pot/create"
+	}
+}

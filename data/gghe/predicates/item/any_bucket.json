@@ -1,0 +1,13 @@
+{
+	"condition": "minecraft:alternative",
+	"terms": [
+		{
+			"condition": "minecraft:reference",
+			"name": "gghe:item/bucket"
+		},
+		{
+			"condition": "minecraft:reference",
+			"name": "gghe:item/water_bucket"
+		}
+	]
+}

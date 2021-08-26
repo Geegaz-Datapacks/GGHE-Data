@@ -1,0 +1,58 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:raw_copper",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"translate": "gghe.item.cooking_pot.name",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc:{id:'cooking_pot',from:'geegaz:gghe',traits:[\"block\", \"cooking_pot\", \"metal/copper\"]},CustomModelData:1707201}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:\"\"}}}"
+						},
+						{
+							"function": "minecraft:copy_nbt",
+							"source": {
+								"type": "minecraft:storage",
+								"source": "geegaz:gghe"
+							},
+							"ops": [
+								{
+									"source": "temp.CookingPot",
+									"target": "gghe.CookingPot",
+									"op": "merge"
+								}
+							]
+						},
+						{
+							"function": "minecraft:copy_nbt",
+							"source": {
+								"type": "minecraft:storage",
+								"source": "geegaz:gghe"
+							},
+							"ops": [
+								{
+									"source": "temp.CustomModelData",
+									"target": "CustomModelData",
+									"op": "replace"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

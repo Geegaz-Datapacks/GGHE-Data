@@ -1,0 +1,30 @@
+{
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"display": {
+		"announce_to_chat": false,
+		"description": [
+			"",
+			{
+				"text": "░░░░░░░░░░░░",
+				"color": "dark_gray"
+			},
+			{
+				"text": "\nGeegaz's Hiking Enhancements\n\nExplore the world !\n"
+			},
+			{
+				"text": "░░░░░░░░░░░░",
+				"color": "dark_gray"
+			}
+		],
+		"icon": {
+			"item": "minecraft:leather_boots"
+		},
+		"show_toast": false,
+		"title": "GGHE           "
+	},
+	"parent": "global:geegaz"
+}

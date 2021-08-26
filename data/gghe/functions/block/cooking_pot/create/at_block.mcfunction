@@ -1,0 +1,2 @@
+execute if entity @e[type=armor_stand,tag=gghe.cooking_pot,distance=..0.5] run tag @s add gghe.create_fail
+execute unless entity @s[tag=gghe.create_fail] run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,ShowArms:1b,Small:1b,Invisible:1b,DisabledSlots:4075310,Tags:["gghe.new","gghe.block","gghe.cooking_pot"]}

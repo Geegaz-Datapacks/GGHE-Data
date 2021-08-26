@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:armor_stand",
+					"nbt": "{Tags:[\"gghe.block\",\"gghe.cooking_pot\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "gghe:player/interact_cooking_pot"
+	}
+}
