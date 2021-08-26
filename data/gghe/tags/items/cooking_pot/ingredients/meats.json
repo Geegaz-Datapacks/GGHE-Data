@@ -1,0 +1,15 @@
+{
+    "values": [
+        "beef",
+        "chicken",
+        "mutton",
+        "porkchop",
+        "rabbit",
+        "rabbit_foot",
+
+        "rotten_flesh",
+        "spider_eye",
+        "fermented_spider_eye",
+        "bone"
+    ]
+}

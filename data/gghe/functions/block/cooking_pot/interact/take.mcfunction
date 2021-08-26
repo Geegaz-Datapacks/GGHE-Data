@@ -9,8 +9,11 @@ data modify storage geegaz:gghe temp.CookingPot set from entity @s ArmorItems[3]
 # Fail if there's no items in the pot
 tag @s[scores={gghe.items=..0}] add gghe.interact_fail
 
+# Remove the item(s)
 execute as @s[tag=!gghe.interact_fail] if entity @p[tag=gghe.interact.cooking_pot,predicate=gghe:is_sneaking] run function gghe:block/cooking_pot/interact/ingredient/remove_all
 execute as @s[tag=!gghe.interact_fail] if entity @p[tag=gghe.interact.cooking_pot,predicate=!gghe:is_sneaking] run function gghe:block/cooking_pot/interact/ingredient/remove
+# Update recipe
+execute as @s[tag=!gghe.interact_fail] run function gghe:block/cooking_pot/interact/recipe/test
 
 function gghe:block/cooking_pot/update
 

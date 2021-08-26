@@ -3,6 +3,7 @@
         "bowl",
         "bucket",
         "water_bucket",
-        "#gghe:ingredients"
+        
+        "#gghe:cooking_pot/ingredients"
     ]
 }

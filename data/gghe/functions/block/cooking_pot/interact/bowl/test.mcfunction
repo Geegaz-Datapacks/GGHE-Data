@@ -1,5 +1,6 @@
 # Fail if there aren't enough levels left
 tag @s[scores={gghe.level=..0}] add gghe.interact_fail
+
 scoreboard players remove @s[tag=!gghe.interact_fail] gghe.level 1
 
 # Give the right recipe
