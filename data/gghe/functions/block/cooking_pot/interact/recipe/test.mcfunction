@@ -11,7 +11,7 @@ execute as @s[scores={gghe.cp.items=2}] run function #gghe:cooking_pot/recipes_2
 execute as @s[scores={gghe.cp.items=3}] run function #gghe:cooking_pot/recipes_3
 execute as @s[scores={gghe.cp.items=4}] run function #gghe:cooking_pot/recipes_4
 
-execute if data storage geegaz:gghe temp.CookingPot.Recipe run tellraw @a [{"text":"[Debug] Recipe: "},{"nbt":"temp.CookingPot.Recipe","storage":"geegaz:gghe","interpret":false}]
+function gghe:block/cooking_pot/process/init
 
 scoreboard players reset $gghe.ingredient_1
 scoreboard players reset $gghe.ingredient_2

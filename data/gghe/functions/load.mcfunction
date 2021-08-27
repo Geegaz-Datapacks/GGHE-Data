@@ -3,6 +3,8 @@
 scoreboard objectives add gghe.var dummy
 scoreboard objectives add gghe.CONST dummy
 
+scoreboard players set $10 gghe.CONST 10
+
 # Cooking Pot scores
 scoreboard objectives add gghe.cp.level dummy
 scoreboard objectives add gghe.cp.items dummy

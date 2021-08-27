@@ -20,7 +20,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:{id:\"\",Servings:0,Duration:0}}}}"
+							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:{id:\"\",Servings:0,CookTime:0}}}}"
 						},
 						{
 							"function": "minecraft:copy_nbt",

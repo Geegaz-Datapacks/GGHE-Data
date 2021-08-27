@@ -19,7 +19,7 @@ loot replace entity @p[tag=gghe.interact.cooking_pot,gamemode=!creative] weapon.
 # VFX
 
 # SFX
-execute as @s[tag=gghe.cooking_pot.has_water] run playsound minecraft:ambient.underwater.exit block @a[distance=..16] ~ ~1 ~ 0.25 1.5
-playsound minecraft:entity.item_frame.remove_item block @a[distance=..16] ~ ~1 ~ 0.25 1.0
+execute as @s[tag=gghe.cooking_pot.has_water] run playsound minecraft:ambient.underwater.exit block @a[distance=..16] ~ ~1 ~ 0.5 1.5
+playsound minecraft:entity.item_frame.remove_item block @a[distance=..16] ~ ~1 ~ 0.8 1.0
 
 setblock ~ 0 ~ bedrock

@@ -5,10 +5,9 @@ execute as @s[scores={gghe.cp.items=3}] run data modify entity @s HandItems[0] s
 execute as @s[scores={gghe.cp.items=4}] run data modify entity @s HandItems[0] set from storage geegaz:gghe temp.CookingPot.Items[3]
 
 # Check modifiers for the current item
-execute as @s[predicate=gghe:tag/modifiers/golden] run scoreboard players add $gghe.modifier.golden gghe.var 1
 execute as @s[predicate=gghe:tag/modifiers/has_bottle] run scoreboard players add $gghe.modifier.has_bottle gghe.var 1
 execute as @s[predicate=gghe:tag/modifiers/has_bucket] run scoreboard players add $gghe.modifier.has_bucket gghe.var 1
-execute as @s[predicate=gghe:tag/modifiers/unhealthy] run scoreboard players add $gghe.modifier.unhealthy gghe.var 1
+execute as @s[predicate=gghe:tag/modifiers/has_ctc] run scoreboard players add $gghe.modifier.has_ctc gghe.var 1
 
 # Loop to next item
 scoreboard players remove @s gghe.cp.items 1

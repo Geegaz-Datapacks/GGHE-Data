@@ -19,8 +19,8 @@ data modify storage geegaz:gghe temp.CookingPot.Items append from storage geegaz
 # VFX
 execute as @s[tag=gghe.cooking_pot.has_water] run particle minecraft:splash ~ ~1 ~ 0.1 0 0.1 1 10
 # SFX
-execute as @s[tag=gghe.cooking_pot.has_water] run playsound minecraft:ambient.underwater.enter block @a[distance=..16] ~ ~1 ~ 0.25 1.5
-execute as @s[tag=!gghe.cooking_pot.has_water] run playsound minecraft:item.armor.equip_generic block @a[distance=..16] ~ ~1 ~ 0.25 0.8
+execute as @s[tag=gghe.cooking_pot.has_water] run playsound minecraft:ambient.underwater.enter block @a[distance=..16] ~ ~1 ~ 0.5 1.5
+execute as @s[tag=!gghe.cooking_pot.has_water] run playsound minecraft:item.armor.equip_generic block @a[distance=..16] ~ ~1 ~ 0.5 0.8
 playsound minecraft:block.copper.step block @a[distance=..16] ~ ~1 ~ 0.8 0.5
 
 tag @e[type=snowball] remove gghe.new
