@@ -1,5 +1,7 @@
 {
     "values": [
-
+        "gghe:block/cooking_pot/recipes/rabbit_stew",
+        "gghe:block/cooking_pot/recipes/beetroot_soup",
+        "gghe:block/cooking_pot/recipes/mushroom_stew"
     ]
 }

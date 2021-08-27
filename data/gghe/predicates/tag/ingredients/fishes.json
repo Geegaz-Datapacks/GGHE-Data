@@ -4,7 +4,7 @@
 	"predicate": {
 		"equipment": {
 			"mainhand": {
-				"tag": "gghe:cooking_pot/ingredients/fishes"
+				"tag": "gghe:ingredients/fishes"
 			}
 		}
 	}

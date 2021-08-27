@@ -3,6 +3,9 @@
         "cod",
         "salmon",
         "pufferfish",
-        "tropical_fish"
+        "tropical_fish",
+
+        "cooked_cod",
+        "cooked_salmon"
     ]
 }

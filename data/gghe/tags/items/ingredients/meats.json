@@ -7,6 +7,12 @@
         "rabbit",
         "rabbit_foot",
 
+        "cooked_beef",
+        "cooked_chicken",
+        "cooked_mutton",
+        "cooked_porkchop",
+        "cooked_rabbit",
+
         "rotten_flesh",
         "spider_eye",
         "fermented_spider_eye",

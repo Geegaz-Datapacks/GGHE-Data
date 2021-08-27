@@ -1,0 +1,14 @@
+{
+    "values": [
+        "#gghe:ingredients/fishes",
+        "#gghe:ingredients/fruits",
+        "#gghe:ingredients/meats",
+        "#gghe:ingredients/sweets",
+        "#gghe:ingredients/vegetables",
+        "#gghe:ingredients/mushrooms",
+
+        "experience_bottle",
+        "dried_kelp",
+        "milk_bucket"
+    ]
+}

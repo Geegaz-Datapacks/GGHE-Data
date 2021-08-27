@@ -4,7 +4,7 @@
 	"predicate": {
 		"equipment": {
 			"mainhand": {
-				"tag": "gghe:cooking_pot/modifiers/has_bucket"
+				"nbt": "{tcc:{}}"
 			}
 		}
 	}
