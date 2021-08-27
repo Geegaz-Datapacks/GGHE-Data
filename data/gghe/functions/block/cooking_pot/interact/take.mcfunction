@@ -1,23 +1,21 @@
-
-# Returns the pot's item
-item replace entity @s armor.head from entity @p[tag=gghe.interact.cooking_pot] weapon.mainhand
-item replace entity @p[tag=gghe.interact.cooking_pot] weapon.mainhand with air
-
 # Get the pot's data in storage
-data modify storage geegaz:gghe temp.CookingPot set from entity @s ArmorItems[3].tag.gghe.CookingPot
+data modify storage geegaz:gghe temp.CookingPot set from entity @p[tag=gghe.interact.cooking_pot] SelectedItem.tag.gghe.CookingPot
 
-# Fail if there's no items in the pot
-tag @s[scores={gghe.items=..0}] add gghe.interact_fail
+# Fails if player used a helmet on the pot
+tag @s[predicate=gghe:has_item_head] add gghe.interact.helmet
 
-# Remove the item(s)
-execute as @s[tag=!gghe.interact_fail] if entity @p[tag=gghe.interact.cooking_pot,predicate=gghe:is_sneaking] run function gghe:block/cooking_pot/interact/ingredient/remove_all
-execute as @s[tag=!gghe.interact_fail] if entity @p[tag=gghe.interact.cooking_pot,predicate=!gghe:is_sneaking] run function gghe:block/cooking_pot/interact/ingredient/remove
-# Update recipe
-execute as @s[tag=!gghe.interact_fail] run function gghe:block/cooking_pot/interact/recipe/test
+execute if entity @p[tag=gghe.interact.cooking_pot,scores={gghe.sneak=1..}] run tag @s add gghe.interact.sneak
 
-function gghe:block/cooking_pot/update
+execute as @s[tag=!gghe.interact.helmet] run item replace entity @p[tag=gghe.interact.cooking_pot] weapon.mainhand with air
+execute as @s[tag=gghe.interact.helmet] run item replace entity @p[tag=gghe.interact.cooking_pot] weapon.mainhand from entity @s armor.head
+
+# Test cases
+execute as @s[tag=!gghe.interact.helmet,tag=gghe.interact.sneak] run function gghe:block/cooking_pot/destroy/get_item
+execute as @s[tag=!gghe.interact.helmet,tag=!gghe.interact.sneak,scores={gghe.cp.items=1..}] run function gghe:block/cooking_pot/interact/ingredient/remove
+
+execute as @s[tag=!gghe.interact.sneak] run function gghe:block/cooking_pot/update
 
 data remove storage geegaz:gghe temp
 
-tag @p[tag=gghe.interact.cooking_pot] remove gghe.interact.cooking_pot
-tag @s remove gghe.interact_fail
+tag @s remove gghe.interact.helmet
+tag @s remove gghe.interact.sneak

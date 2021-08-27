@@ -3,8 +3,11 @@
 scoreboard objectives add gghe.var dummy
 scoreboard objectives add gghe.CONST dummy
 
-scoreboard objectives add gghe.level dummy
-scoreboard objectives add gghe.items dummy
+# Cooking Pot scores
+scoreboard objectives add gghe.cp.level dummy
+scoreboard objectives add gghe.cp.items dummy
+
+scoreboard objectives add gghe.sneak custom:sneak_time
 
 # Start the second clock
 function gghe:second
