@@ -1,8 +1,7 @@
 
 # Get the pot's data in storage
 data modify storage geegaz:gghe temp.CookingPot set from entity @s ArmorItems[3].tag.gghe.CookingPot
-
-function gghe:block/cooking_pot/destroy/get_item
+function gghe:block/cooking_pot/interact/get_item
 
 # VFX
 particle block copper_block ~ ~0.5 ~ 0.2 0.2 0.2 0 16 normal

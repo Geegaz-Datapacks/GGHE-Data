@@ -1,16 +1,18 @@
 
+# Get the item's data in storage
+data modify storage geegaz:gghe temp.Item set from entity @s HandItems[0]
 # Set the item's slot
-execute store result storage geegaz:gghe temp.Item.Slot byte 1.0 run scoreboard players get @s gghe.cp.items
+execute store result storage geegaz:gghe temp.Item.Slot byte 1.0 run scoreboard players get $gghe.items gghe.var
 
-scoreboard players add @s gghe.cp.items 1
+scoreboard players add $gghe.items gghe.var 1
 
 # Create visual item
-execute as @s[scores={gghe.cp.items=1}] run summon snowball ~0.1 ~1 ~-0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
-execute as @s[scores={gghe.cp.items=2}] run summon snowball ~0.1 ~1 ~0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
-execute as @s[scores={gghe.cp.items=3}] run summon snowball ~-0.1 ~1 ~0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
-execute as @s[scores={gghe.cp.items=4}] run summon snowball ~-0.1 ~1 ~-0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
+execute if score $gghe.items gghe.var matches 1 run summon snowball ~0.1 ~1 ~-0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
+execute if score $gghe.items gghe.var matches 2 run summon snowball ~0.1 ~1 ~0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
+execute if score $gghe.items gghe.var matches 3 run summon snowball ~-0.1 ~1 ~0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
+execute if score $gghe.items gghe.var matches 4 run summon snowball ~-0.1 ~1 ~-0.1 {NoGravity:1b,Tags:["gghe.new","gghe.cooking_pot.ingredient"]}
 
-scoreboard players operation @e[type=snowball,tag=gghe.new,tag=gghe.cooking_pot.ingredient] gghe.cp.items = @s gghe.cp.items
+scoreboard players operation @e[type=snowball,tag=gghe.new,tag=gghe.cooking_pot.ingredient] gghe.CONST = $gghe.items gghe.var
 data modify entity @e[type=snowball,tag=gghe.new,tag=gghe.cooking_pot.ingredient,limit=1,sort=nearest] Item set from storage geegaz:gghe temp.Item
 
 # Add the new item to the pot's data

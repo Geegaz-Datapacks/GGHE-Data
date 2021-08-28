@@ -1,5 +1,2 @@
 
-# VFX
-
-# SFX
-execute as @s[tag=!gghe.cooking_pot.disabled,tag=gghe.cooking_pot.has_water] run playsound block.bubble_column.whirlpool_ambient block @a[distance=..16] ~ ~ ~ 0.75 1.2
+execute as @s[tag=gghe.cooking_pot.process,tag=!gghe.cooking_pot.disabled] run function gghe:block/cooking_pot/process/second

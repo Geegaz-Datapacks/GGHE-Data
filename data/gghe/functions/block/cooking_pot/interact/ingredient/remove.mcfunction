@@ -1,15 +1,13 @@
 setblock ~ 0 ~ yellow_shulker_box
 
 # Remove the last visual item
-scoreboard players operation $gghe.temp gghe.cp.items = @s gghe.cp.items
-execute positioned ~ ~1 ~ as @e[type=snowball,distance=..0.5,tag=gghe.cooking_pot.ingredient] if score @s gghe.cp.items = $gghe.temp gghe.cp.items run kill @s
-scoreboard players reset $gghe.temp
+execute positioned ~ ~1 ~ as @e[type=snowball,distance=..0.5,tag=gghe.cooking_pot.ingredient] if score @s gghe.CONST = $gghe.items gghe.var run kill @s
 
 # Remove the last item and put it in the yellow_shulker_box
 data modify block ~ 0 ~ Items append from storage geegaz:gghe temp.CookingPot.Items[-1]
 data remove block ~ 0 ~ Items[].Slot
 data remove storage geegaz:gghe temp.CookingPot.Items[-1]
-scoreboard players remove @s gghe.cp.items 1
+scoreboard players remove $gghe.items gghe.var 1
 # Update the recipe
 function gghe:block/cooking_pot/interact/recipe/test
 
