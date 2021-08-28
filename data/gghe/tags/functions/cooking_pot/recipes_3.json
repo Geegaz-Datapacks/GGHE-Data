@@ -1,6 +1,7 @@
 {
-    "values": [
-        "gghe:block/cooking_pot/recipes/roast_chicken",
-        "gghe:block/cooking_pot/recipes/mushroom_stew"
-    ]
+  "values": [
+    "gghe:block/cooking_pot/recipes/roast_chicken",
+    "gghe:block/cooking_pot/recipes/mushroom_stew",
+    "gghe:block/cooking_pot/recipes/hot_cocoa"
+  ]
 }

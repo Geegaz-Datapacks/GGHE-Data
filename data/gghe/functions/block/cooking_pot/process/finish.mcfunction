@@ -21,11 +21,13 @@ execute positioned ~ ~1 ~ as @e[type=snowball,distance=..0.5,tag=gghe.cooking_po
 function gghe:block/cooking_pot/interact/set_data
 loot replace entity @s armor.head loot gghe:items/cooking_pot
 
+# Reset animation
+data modify entity @s Pose.Head set value [0.0f,0.0f,0.0f]
+
 # VFX
 particle minecraft:happy_villager ~ ~1.5 ~ 0.2 0.25 0.2 0 5
 # SFX
-playsound minecraft:block.brewing_stand.brew block @a[distance=..16] ~ ~1 ~ 0.2 0.5
-playsound minecraft:entity.player.swim block @a ~ ~ ~ 0.5 1.5
+playsound minecraft:item.armor.equip_generic block @a[distance=..16] ~ ~1 ~ 0.5 0.5
 
 tellraw @a[tag=gghe.debug] [{"translate":"[DEBUG] [Cooking Pot]"},{"text":" Finished recipe: "},{"nbt":"temp.CookingPot.Recipe.id","storage":"geegaz:gghe","interpret":false}]
 

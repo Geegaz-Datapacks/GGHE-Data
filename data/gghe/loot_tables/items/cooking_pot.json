@@ -16,11 +16,11 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'cooking_pot',from:'geegaz:gghe',traits:[\"block\", \"cooking_pot\", \"metal/copper\"]},CustomModelData:1707201}"
+							"tag": "{ctc:{id:'cooking_pot',from:'geegaz:gghe',traits:['block', 'cooking_pot', 'metal/copper']},CustomModelData:1707201}"
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:{id:\"\",Servings:0,CookTime:0},CMDStates:{_:1707201,HasLevel:1707202,Block:1707101,BlockHasWater:1707102,BlockHasLevel:1707103}}}}"
+							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:{id:'',Servings:0,CookTime:0},CMDStates:{HasLevel:1707202,Block:1707101,BlockHasWater:1707102,BlockHasLevel:1707103}}}}"
 						},
 						{
 							"function": "minecraft:copy_nbt",
