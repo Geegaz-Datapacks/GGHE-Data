@@ -4,11 +4,11 @@
 			"trigger": "item_used_on_block",
 			"conditions": {
 				"item": {
-					"nbt": "{ctc:{id:'cooking_pot',from:'geegaz:gghe'}}"
+					"nbt": "{gghe:{CookingPot:{}}}"
 				},
 				"location": {
 					"block": {
-						"tag": "campfires"
+						"tag": "minecraft:campfires"
 					}
 				}
 			}

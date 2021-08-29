@@ -8,6 +8,4 @@ particle block copper_block ~ ~0.5 ~ 0.2 0.2 0.2 0 16 normal
 # SFX
 playsound minecraft:block.copper.break block @a ~ ~ ~
 
-tellraw @a[tag=gghe.debug] [{"translate":"[DEBUG] [Cooking Pot]"},{"text":" Destroyed Cooking Pot: "},{"nbt":"temp.CookingPot","storage":"geegaz:gghe","interpret":false}]
-
 data remove storage geegaz:gghe temp

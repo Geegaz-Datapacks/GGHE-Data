@@ -1,8 +1,6 @@
 
-scoreboard players set $gghe.frames gghe.var 8
-
 scoreboard players operation @s gghe.var = @s gghe.time
-scoreboard players operation @s gghe.var %= $gghe.frames gghe.var
+scoreboard players operation @s gghe.var %= $8 gghe.CONST
 
 execute as @s[scores={gghe.var=0}] run data modify entity @s Pose.Head set value [2f,0f,0f]
 execute as @s[scores={gghe.var=1}] run data modify entity @s Pose.Head set value [2f,0f,2f]

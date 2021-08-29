@@ -29,8 +29,6 @@ particle minecraft:happy_villager ~ ~1.5 ~ 0.2 0.25 0.2 0 5
 # SFX
 playsound minecraft:item.armor.equip_generic block @a[distance=..16] ~ ~1 ~ 0.5 0.5
 
-tellraw @a[tag=gghe.debug] [{"translate":"[DEBUG] [Cooking Pot]"},{"text":" Finished recipe: "},{"nbt":"temp.CookingPot.Recipe.id","storage":"geegaz:gghe","interpret":false}]
-
 scoreboard players reset @s gghe.CONST
 scoreboard players reset @s gghe.time
 
