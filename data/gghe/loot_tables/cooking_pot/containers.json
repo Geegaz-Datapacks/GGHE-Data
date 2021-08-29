@@ -1,0 +1,50 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glass_bottle"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:reference",
+            "name": "gghe:tags/containers/bottles"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bowl"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:reference",
+            "name": "gghe:tags/containers/bowls"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bucket"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:reference",
+            "name": "gghe:tags/containers/buckets"
+          }
+        ]
+      }
+    ]
+  }
+  

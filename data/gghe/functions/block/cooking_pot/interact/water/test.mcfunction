@@ -1,5 +1,5 @@
 # Get previous state and new state
-tag @s[predicate=gghe:item/bucket] add gghe.cooking_pot.remove_water
+tag @s[predicate=gghe:items/bucket] add gghe.cooking_pot.remove_water
 
 # Fail if trying to empty an already empty cooking pot or if the pot has levels
 tag @s[scores={gghe.cp.level=1..}] add gghe.interact_fail

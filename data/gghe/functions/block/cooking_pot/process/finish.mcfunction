@@ -3,12 +3,12 @@ data modify storage geegaz:gghe temp.CookingPot set from entity @s ArmorItems[3]
 function gghe:block/cooking_pot/interact/get_data
 
 # Drop the containers
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Tags:["gghe.cooking_pot.ingredient_provider"]}
-scoreboard players operation @e[type=armor_stand,tag=gghe.cooking_pot.ingredient_provider] gghe.var = $gghe.items gghe.var
-execute as @e[type=armor_stand,tag=gghe.cooking_pot.ingredient_provider,limit=1,sort=nearest] run function gghe:block/cooking_pot/interact/recipe/check_containers
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Tags:["gghe.cooking_pot.ingredient_provider","gghe.provider.containers"]}
+execute as @e[type=armor_stand,tag=gghe.cooking_pot.ingredient_provider] run function gghe:block/cooking_pot/interact/recipe/provider
 
-# Set the pot's scores
+# Set the pot's level from the recipe
 execute store result score $gghe.level gghe.var run data get storage geegaz:gghe temp.CookingPot.Recipe.Servings
+# Remove water
 tag @s remove gghe.cooking_pot.has_water
 
 # Remove all items from storage
