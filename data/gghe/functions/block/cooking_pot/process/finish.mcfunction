@@ -18,7 +18,7 @@ execute positioned ~ ~1 ~ as @e[type=snowball,distance=..0.5,tag=gghe.cooking_po
 tag @s remove gghe.cooking_pot.has_water
 
 # Update the pot
-function gghe:block/cooking_pot/update
+function gghe:block/cooking_pot/interact/set_data
 
 # Reset animation
 data modify entity @s Pose.Head set value [0.0f,0.0f,0.0f]
@@ -30,6 +30,5 @@ particle minecraft:happy_villager ~ ~1.5 ~ 0.2 0.25 0.2 0 5
 # SFX
 playsound minecraft:item.armor.equip_generic block @a[distance=..16] ~ ~1 ~ 0.5 0.5
 
-scoreboard players reset @s gghe.CONST
-scoreboard players reset @s gghe.time
+scoreboard players reset @s
 data remove storage geegaz:gghe temp

@@ -19,8 +19,7 @@ execute as @s[tag=gghe.interact_fail] as @p[tag=gghe.interact.cooking_pot,gamemo
 item replace entity @p[tag=gghe.interact.cooking_pot] weapon.mainhand from entity @s weapon.mainhand gghe:count_from_score
 
 # Update the pot
-function gghe:block/cooking_pot/update
+function gghe:block/cooking_pot/interact/set_data
 
-scoreboard players reset $gghe.count
 data remove storage geegaz:gghe temp
 tag @s remove gghe.interact_fail

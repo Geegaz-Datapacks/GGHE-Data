@@ -2,10 +2,11 @@
 # Setup data and scores
 # - temp.Items is the original list of items
 # - temp.SimplifiedItems stores unique items with their amount
-# - $gghe.items stores the number of unique items
+# - $gghe.count stores the number of unique items
+# - $gghe.items stores the total amount of items
 data modify storage geegaz:gghe temp.Items set from storage geegaz:gghe temp.CookingPot.Items
 data modify storage geegaz:gghe temp.SimplifiedItems set value []
-scoreboard players set $gghe.items gghe.var 0
+scoreboard players set $gghe.count gghe.var 0
 
 # Simplify items
 function gghe:block/cooking_pot/interact/recipe/test_items

@@ -1,6 +1,6 @@
 
 # Update the pot
-function gghe:block/cooking_pot/update
+function gghe:block/cooking_pot/interact/set_data
 
 # VFX
 

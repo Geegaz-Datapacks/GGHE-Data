@@ -10,3 +10,4 @@ execute unless score $gghe.level gghe.var matches 1.. run data remove storage ge
 # Reset the temp scores
 scoreboard players reset $gghe.level
 scoreboard players reset $gghe.items
+scoreboard players reset $gghe.count
