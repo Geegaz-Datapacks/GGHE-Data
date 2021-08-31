@@ -1,6 +1,6 @@
 
 # Get the pot's data in storage
-data modify storage geegaz:gghe temp.CookingPot set from block ~ ~ ~ Items[{tag:{ctc:{id:'cooking_pot',from:'geegaz:gghe'}}}].tag.gghe.CookingPot
+data modify storage geegaz:gghe temp.CookingPot set from block ~ ~ ~ Items[{tag:{gghe:{CookingPot:{}}}}].tag.gghe.CookingPot
 function gghe:block/cooking_pot/interact/get_data
 
 # Fail if there's already a pot
@@ -15,7 +15,7 @@ execute as @s[tag=gghe.create_fail] run function gghe:block/cooking_pot/interact
 execute as @s[tag=gghe.create_fail,gamemode=!creative] run loot give @s loot gghe:items/cooking_pot
 
 # Clear the campfire
-data remove block ~ ~ ~ Items[{tag:{ctc:{id:'cooking_pot',from:'geegaz:gghe'}}}]
+data remove block ~ ~ ~ Items[{tag:{gghe:{CookingPot:{}}}}]
 
 data remove storage geegaz:gghe temp
 

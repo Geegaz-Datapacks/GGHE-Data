@@ -1,8 +1,5 @@
 setblock ~ 0 ~ yellow_shulker_box
 
-# Set needed data
-#data modify storage geegaz:gghe temp.CookingPot.Items[].Count set value 1b
-
 # Remove the last item and put it in the yellow_shulker_box
 data modify block ~ 0 ~ Items append from storage geegaz:gghe temp.CookingPot.Items[-1]
 data remove storage geegaz:gghe temp.CookingPot.Items[-1]

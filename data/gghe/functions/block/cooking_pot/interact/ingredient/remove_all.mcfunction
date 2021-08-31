@@ -1,7 +1,6 @@
 setblock ~ 0 ~ yellow_shulker_box
 
 # Set needed data
-#data modify storage geegaz:gghe temp.CookingPot.Items[].Count set value 1b
 execute if score $gghe.items gghe.var matches 1.. run data modify storage geegaz:gghe temp.CookingPot.Items[0].Slot set value 0b
 execute if score $gghe.items gghe.var matches 2.. run data modify storage geegaz:gghe temp.CookingPot.Items[1].Slot set value 1b
 execute if score $gghe.items gghe.var matches 3.. run data modify storage geegaz:gghe temp.CookingPot.Items[2].Slot set value 2b

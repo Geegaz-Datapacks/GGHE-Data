@@ -1,6 +1,7 @@
 
 # Get the pot's data in storage
 data modify storage geegaz:gghe temp.CookingPot set from entity @s ArmorItems[3].tag.gghe.CookingPot
+function gghe:block/cooking_pot/interact/get_data
 function gghe:block/cooking_pot/interact/get_item
 
 # VFX

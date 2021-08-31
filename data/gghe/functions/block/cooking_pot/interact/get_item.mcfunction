@@ -13,7 +13,5 @@ execute as @s[tag=gghe.cooking_pot.has_water] run particle minecraft:splash ~ ~1
 execute as @s[tag=gghe.cooking_pot.has_water] run playsound item.bucket.empty block @a[distance=..16] ~ ~1 ~ 0.5 1.0
 execute if entity @p[tag=gghe.interact.cooking_pot] run playsound minecraft:entity.item_frame.remove_item block @a[distance=..16] ~ ~1 ~ 0.8 1.0
 
-scoreboard players reset @s gghe.CONST
-scoreboard players reset @s gghe.time
-
+scoreboard players reset @s 
 kill @s

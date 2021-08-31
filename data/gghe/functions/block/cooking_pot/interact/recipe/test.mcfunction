@@ -14,8 +14,6 @@ data modify storage geegaz:gghe temp.Items set from storage geegaz:gghe temp.Sim
 # Apply item tags on the simplified list
 function gghe:block/cooking_pot/interact/recipe/test_tags
 
-tellraw @a {"nbt":"temp.Items","storage":"geegaz:gghe","interpret":false}
-
 # Reset the test variable
 scoreboard players set @s gghe.var 0
 # Test the recipes
