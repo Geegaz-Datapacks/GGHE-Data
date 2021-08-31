@@ -1,6 +1,10 @@
 
 # Update the pot
-function gghe:block/cooking_pot/interact/set_data
-loot replace entity @s armor.head loot gghe:items/cooking_pot
+function gghe:block/cooking_pot/update
+
+# VFX
+
+# SFX
+playsound minecraft:block.copper.place block @a ~ ~ ~
 
 tag @s remove gghe.new

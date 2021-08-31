@@ -13,20 +13,14 @@ execute as @s[predicate=!gghe:tags/cooking_pot_valid] run tag @s add gghe.intera
 execute as @s[predicate=gghe:items/bowl,tag=!gghe.interact_fail] run function gghe:block/cooking_pot/interact/bowl/test
 execute as @s[predicate=gghe:items/any_bucket,tag=!gghe.interact_fail] run function gghe:block/cooking_pot/interact/water/test
 execute as @s[predicate=gghe:tags/ingredients,tag=!gghe.interact_fail] run function gghe:block/cooking_pot/interact/ingredient/test
-# Update recipe if the interation suceeded and the pot doesn't have levels
-execute if entity @s[tag=!gghe.interact_fail] unless score $gghe.level gghe.var matches 1.. run function gghe:block/cooking_pot/interact/recipe
 
 # Restore the item in the hand of the player
 execute as @s[tag=gghe.interact_fail] as @p[tag=gghe.interact.cooking_pot,gamemode=!creative] run scoreboard players add $gghe.count gghe.var 1
 item replace entity @p[tag=gghe.interact.cooking_pot] weapon.mainhand from entity @s weapon.mainhand gghe:count_from_score
 
 # Update the pot
-function gghe:block/cooking_pot/interact/set_data
-loot replace entity @s armor.head loot gghe:items/cooking_pot
-item replace entity @s weapon.mainhand with air
+function gghe:block/cooking_pot/update
 
 scoreboard players reset $gghe.count
-
 data remove storage geegaz:gghe temp
-
 tag @s remove gghe.interact_fail

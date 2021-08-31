@@ -1,8 +1,6 @@
 
 # Get the item's data in storage
 data modify storage geegaz:gghe temp.Item set from entity @s HandItems[0]
-data remove storage geegaz:gghe temp.Item.Count
-data remove storage geegaz:gghe temp.Item.Slot
 
 scoreboard players add $gghe.items gghe.var 1
 

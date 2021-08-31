@@ -1,7 +1,7 @@
 setblock ~ 0 ~ yellow_shulker_box
 
 # Set needed data
-data modify storage geegaz:gghe temp.CookingPot.Items[].Count set value 1b
+#data modify storage geegaz:gghe temp.CookingPot.Items[].Count set value 1b
 
 # Remove the last item and put it in the yellow_shulker_box
 data modify block ~ 0 ~ Items append from storage geegaz:gghe temp.CookingPot.Items[-1]
@@ -13,9 +13,6 @@ scoreboard players remove $gghe.items gghe.var 1
 
 # Give the ingredient back
 loot replace entity @p[tag=gghe.interact.cooking_pot,gamemode=!creative] weapon.mainhand mine ~ 0 ~ air{drop_contents:1b}
-
-# Update the recipe
-function gghe:block/cooking_pot/interact/recipe
 
 # VFX
 

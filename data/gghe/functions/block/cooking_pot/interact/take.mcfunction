@@ -15,10 +15,8 @@ execute as @s[tag=!gghe.interact_fail,tag=gghe.interact_sneak] run function gghe
 execute as @s[tag=!gghe.interact_fail,tag=!gghe.interact_sneak] if score $gghe.items gghe.var matches 1.. run function gghe:block/cooking_pot/interact/ingredient/remove
 
 # Update the pot
-function gghe:block/cooking_pot/interact/set_data
-loot replace entity @s armor.head loot gghe:items/cooking_pot
+function gghe:block/cooking_pot/update
 
 data remove storage geegaz:gghe temp
-
 tag @s remove gghe.interact_fail
 tag @s remove gghe.interact_sneak
