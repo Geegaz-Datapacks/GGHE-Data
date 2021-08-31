@@ -1,5 +1,5 @@
 
-# Set the pot's data from scores, remove water and recipe if no levels
+# Set the pot's data from scores and remove water, remove recipe if no levels
 execute store result storage geegaz:gghe temp.CookingPot.Level int 1.0 run scoreboard players get $gghe.level gghe.var
 data remove storage geegaz:gghe temp.CookingPot.HasWater
 execute unless score $gghe.level gghe.var matches 1.. run data remove storage geegaz:gghe temp.CookingPot.Recipe

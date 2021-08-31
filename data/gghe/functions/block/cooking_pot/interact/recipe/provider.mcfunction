@@ -9,8 +9,6 @@ execute as @s[scores={gghe.var=4}] run data modify entity @s HandItems[0] set fr
 
 # Test if the current item is a container
 execute as @s[tag=gghe.provider.containers,predicate=gghe:tags/containers] run loot spawn ~ ~1 ~ loot gghe:cooking_pot/containers
-# Test if the current item has nbt
-execute as @s[tag=gghe.provider.compat,predicate=gghe:items/compat] run scoreboard players add $gghe.compat.custom gghe.var 1
 # Test tags for the current item
 execute as @s[tag=gghe.provider.item_tags] run function gghe:block/cooking_pot/interact/recipe/test_tags
 
