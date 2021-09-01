@@ -5,12 +5,14 @@ execute store success storage geegaz:gghe temp.CookingPot.HasWater byte 1.0 if e
 
 # Update the recipe if the interation suceeded and the pot doesn't have levels
 execute as @s[scores={gghe.var=0}] unless score $gghe.level gghe.var matches 1.. run function gghe:block/cooking_pot/interact/recipe
-# Update the display if the player wasn't sneaking
-execute as @s[tag=!gghe.interact_sneak,tag=gghe.cooking_pot.has_display] run function gghe:block/cooking_pot/display/update
 
-# Update the pot - whole data is copied to the item
+# Update the pot 
+# - whole data is copied to the item
 loot replace entity @s armor.head loot gghe:cooking_pot/block
 item replace entity @s weapon.mainhand with air
+
+# Update the display if the player wasn't sneaking
+execute as @s[tag=!gghe.interact_sneak] run function gghe:block/cooking_pot/display/test
 
 # Reset the temp scores
 scoreboard players reset $gghe.level

@@ -2,7 +2,7 @@
 # Remove ingredients
 execute if score $gghe.items gghe.var matches 1.. run function gghe:block/cooking_pot/interact/ingredient/remove_all
 # Remove the display
-execute as @s[tag=gghe.cooking_pot.has_display] positioned ~ ~1 ~ run function gghe:block/cooking_pot/display/remove
+execute as @s[tag=gghe.cooking_pot.has_display] run function gghe:block/cooking_pot/display/remove
 
 # Set the pot's data from scores
 execute store result storage geegaz:gghe temp.CookingPot.Level int 1.0 run scoreboard players get $gghe.level gghe.var
