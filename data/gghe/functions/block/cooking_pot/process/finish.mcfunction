@@ -7,6 +7,12 @@ data modify storage geegaz:gghe temp.Items set from storage geegaz:gghe temp.Coo
 # Drop the containers
 function gghe:block/cooking_pot/interact/recipe/test_containers
 
+# Get the recipe item in storage
+tag @s add gghe.cooking_pot.display_target
+summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["gghe.cooking_pot.display_provider"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:999999,ShowParticles:0b}]}
+execute as @e[type=bat,tag=gghe.cooking_pot.display_provider] run function gghe:block/cooking_pot/display/provider
+tag @s remove gghe.cooking_pot.display_target
+
 # Set the pot's level and score from the recipe
 execute store result score $gghe.level gghe.var run data get storage geegaz:gghe temp.CookingPot.Recipe.Servings
 # Remove water

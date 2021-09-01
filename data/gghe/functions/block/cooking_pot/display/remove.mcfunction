@@ -1,4 +1,4 @@
-say remove display
+
 # Put the item in the offhand of the pot
 tag @s add gghe.cooking_pot.display_target
 summon bat ~ ~ ~ {Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["gghe.cooking_pot.display_provider"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:999999,ShowParticles:0b}]}
