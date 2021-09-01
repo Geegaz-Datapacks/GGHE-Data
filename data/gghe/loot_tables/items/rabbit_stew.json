@@ -5,7 +5,16 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:rabbit_stew"
+					"name": "minecraft:rabbit_stew",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"translate": "item.minecraft.rabbit_stew",
+								"italic": false
+							}
+						}
+					]
 				}
 			]
 		}

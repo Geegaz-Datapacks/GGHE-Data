@@ -7,22 +7,21 @@ data modify storage geegaz:gghe temp.Items set from storage geegaz:gghe temp.Coo
 # Drop the containers
 function gghe:block/cooking_pot/interact/recipe/test_containers
 
-# Set the pot's level from the recipe
+# Set the pot's level and score from the recipe
 execute store result score $gghe.level gghe.var run data get storage geegaz:gghe temp.CookingPot.Recipe.Servings
+# Remove water
+tag @s remove gghe.cooking_pot.has_water
 # Remove all items from storage
 data remove storage geegaz:gghe temp.CookingPot.Items
 scoreboard players set $gghe.items gghe.var 0
 # Remove all visual items
 execute positioned ~ ~1 ~ as @e[type=snowball,distance=..0.5,tag=gghe.cooking_pot.ingredient] run kill @s
-# Remove water
-tag @s remove gghe.cooking_pot.has_water
 
 # Update the pot
 function gghe:block/cooking_pot/interact/set_data
 
-# Reset animation
+# Stop process and reset animation
 data modify entity @s Pose.Head set value [0.0f,0.0f,0.0f]
-# Stop process
 tag @s remove gghe.cooking_pot.process
 
 # VFX

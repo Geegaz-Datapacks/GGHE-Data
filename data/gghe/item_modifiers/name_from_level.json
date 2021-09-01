@@ -1,0 +1,25 @@
+[
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+    "name": {
+      "translate": "gghe.icon.bowl",
+      "color": "white",
+      "font": "gghe:icons",
+      "italic": false,
+      "extra": [
+        {
+          "text": "×",
+          "font": "default"
+        },
+        {
+          "score": {
+            "name": "$gghe.level",
+            "objective": "gghe.var"
+          },
+          "font": "default"
+        }
+      ]
+		}
+	}
+]

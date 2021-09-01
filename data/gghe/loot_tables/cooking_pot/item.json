@@ -1,0 +1,109 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "gghe:items/cooking_pot",
+					"functions": [
+						{
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1707202}",
+              "conditions": [
+                {
+									"condition": "minecraft:reference",
+									"name": "gghe:has_level"
+								}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "text": "┈┈┈┈┈┈┈┈┈ ",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "translate": "gghe.item.cooking_pot.recipe"
+                      },
+                      {
+                        "text": " ┈┈┈┈┈┈┈┈┈"
+                      }
+                    ]
+                  }
+                ],
+                {
+                  "selector": "@s",
+                  "color": "white",
+                  "italic": false
+                },
+                [
+                  {
+                    "translate": "gghe.icon.bowl",
+                    "color": "white",
+                    "font": "gghe:icons",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "×",
+                        "color": "gray",
+                        "font": "default"
+                      },
+                      {
+                        "score": {
+                          "name": "$gghe.level",
+                          "objective": "gghe.var"
+                        },
+                        "color": "gray",
+                        "font": "default"
+                      }
+                    ]
+                  }
+                ]
+              ],
+              "replace": true,
+              "conditions": [
+                {
+									"condition": "minecraft:reference",
+									"name": "gghe:has_level"
+								}
+              ]
+            },
+						{
+							"function": "minecraft:copy_nbt",
+							"source": {
+								"type": "minecraft:storage",
+								"source": "geegaz:gghe"
+							},
+							"ops": [
+								{
+									"source": "temp.CookingPot.Recipe",
+									"target": "gghe.CookingPot.Recipe",
+									"op": "replace"
+								}
+							]
+						},
+						{
+							"function": "minecraft:copy_nbt",
+							"source": {
+								"type": "minecraft:storage",
+								"source": "geegaz:gghe"
+							},
+							"ops": [
+								{
+									"source": "temp.CookingPot.Level",
+									"target": "gghe.CookingPot.Level",
+									"op": "replace"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

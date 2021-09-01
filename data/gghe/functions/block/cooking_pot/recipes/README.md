@@ -46,6 +46,9 @@ An example from `gghe:items/roast_chicken`:
 
 Recipe functions are designed to be flexible and compatible with other datapacks and mods.
 
+Recipes are stored as an NBT object, with the path of a loot table as `id`, a number of `Servings` and a `CookTime`. For example, the Roast Chicken is `{id:"gghe:items/roast_chicken",Servings:1,CookTime:400}`
+To get the item itself, the pot summons a "provider" (here an invisible and silent bat) and replaces its `DeathLootTable` from the recipe's `id` - then it can just `loot replace entity @s armor.feet kill @s` to get the item
+
 ## Add the function to a tag *(don't forget this !)*
 
 Depending on the number of items in the pot, a different function tag is called (`#gghe:cooking_pot/recipes_<item amount>`) so you need to add your new recipe to the right tag for it to work. The amount of items can go from 1 to 4.

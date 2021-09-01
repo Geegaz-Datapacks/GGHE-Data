@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{Tags:[\"gghe.cooking_pot.has_water\"]}"
+    }
+}

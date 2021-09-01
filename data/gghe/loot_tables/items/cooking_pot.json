@@ -20,35 +20,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:{id:'',Servings:0,CookTime:0},CMDStates:{HasLevel:1707202,Block:1707101,BlockHasWater:1707102,BlockHasLevel:1707103}}}}"
-						},
-						{
-							"function": "minecraft:copy_nbt",
-							"source": {
-								"type": "minecraft:storage",
-								"source": "geegaz:gghe"
-							},
-							"ops": [
-								{
-									"source": "temp.CookingPot",
-									"target": "gghe.CookingPot",
-									"op": "merge"
-								}
-							]
-						},
-						{
-							"function": "minecraft:copy_nbt",
-							"source": {
-								"type": "minecraft:storage",
-								"source": "geegaz:gghe"
-							},
-							"ops": [
-								{
-									"source": "temp.CustomModelData",
-									"target": "CustomModelData",
-									"op": "replace"
-								}
-							]
+							"tag": "{gghe:{CookingPot:{Level:0,HasWater:false,Items:[],Recipe:{id:'',Servings:0,CookTime:0}}}}"
 						}
 					]
 				}

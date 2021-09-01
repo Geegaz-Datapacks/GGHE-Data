@@ -1,0 +1,53 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "gghe:items/cooking_pot",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:1707101}"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:1707102}",
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "gghe:has_water"
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{CustomModelData:1707103}",
+							"conditions": [
+								{
+									"condition": "minecraft:reference",
+									"name": "gghe:has_level"
+								}
+							]
+						},
+						{
+							"function": "minecraft:copy_nbt",
+							"source": {
+								"type": "minecraft:storage",
+								"source": "geegaz:gghe"
+							},
+							"ops": [
+								{
+									"source": "temp.CookingPot",
+									"target": "gghe.CookingPot",
+									"op": "replace"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

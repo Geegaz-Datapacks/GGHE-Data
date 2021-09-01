@@ -5,7 +5,16 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:mushroom_stew"
+					"name": "minecraft:mushroom_stew",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"translate": "item.minecraft.mushroom_stew",
+								"italic": false
+							}
+						}
+					]
 				}
 			]
 		}
