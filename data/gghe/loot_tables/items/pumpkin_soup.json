@@ -10,17 +10,13 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.roast_chicken.name",
+								"translate": "gghe.item.pumpkin_soup.name",
 								"italic": false
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'roast_chicken',from:'geegaz:gghe',traits:['item','food','food/meat','food/chicken']},CustomModelData:1707301}"
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{Effects:[{EffectId:23b,EffectDuration:2}]}"
+							"tag": "{ctc:{id:'pumpkin_soup',from:'geegaz:gghe',traits:['item','food','food/stew','food/pumpkin']},CustomModelData:1707303}"
 						}
 					]
 				}
