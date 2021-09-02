@@ -17,6 +17,7 @@ execute unless entity @p[tag=gghe.interact.cooking_pot] run loot spawn ~ ~0.5 ~ 
 # Reset the temp scores
 scoreboard players reset $gghe.level
 scoreboard players reset $gghe.items
+scoreboard players reset $gghe.count
 
 # VFX
 execute as @s[tag=gghe.cooking_pot.has_water] run particle minecraft:splash ~ ~1 ~ 0.1 0 0.1 1 20

@@ -12,7 +12,7 @@ execute as @s[scores={gghe.var=0}] run function gghe:block/cooking_pot/interact/
 # VFX
 
 # SFX
-execute as @s[tag=!gghe.create_fail] run playsound minecraft:block.copper.place block @a ~ ~ ~
+execute as @s[scores={gghe.var=0}] run playsound minecraft:block.copper.place block @a ~ ~ ~
 
 tag @s remove gghe.new
-kill @s[tag=gghe.create_fail]
+kill @s[scores={gghe.var=1}]

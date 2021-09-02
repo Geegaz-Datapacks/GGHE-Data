@@ -17,3 +17,4 @@ execute as @s[tag=!gghe.interact_sneak] run function gghe:block/cooking_pot/disp
 # Reset the temp scores
 scoreboard players reset $gghe.level
 scoreboard players reset $gghe.items
+scoreboard players reset $gghe.count
