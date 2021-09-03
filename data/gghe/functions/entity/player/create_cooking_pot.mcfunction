@@ -1,4 +1,3 @@
-
 tag @s add gghe.create
 
 # Find the campfire and create the pot
