@@ -7,7 +7,7 @@ data remove storage geegaz:gghe temp.CookingPot.Items[-1]
 execute positioned ~ ~1 ~ as @e[type=snowball,distance=..0.5,tag=gghe.cooking_pot.ingredient] if score @s gghe.CONST = $gghe.items gghe.var run kill @s
 
 # Give the ingredient back
-loot give @p[tag=gghe.interact.cooking_pot,gamemode=!creative] mine ~ 0 ~ air{drop_contents:1b}
+loot give @p[tag=gghe.interact,gamemode=!creative] mine ~ 0 ~ air{drop_contents:1b}
 
 # VFX
 

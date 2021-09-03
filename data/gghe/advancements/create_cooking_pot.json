@@ -15,6 +15,6 @@
 		}
 	},
 	"rewards": {
-		"function": "gghe:block/cooking_pot/create"
+		"function": "gghe:entity/player/create_cooking_pot"
 	}
 }

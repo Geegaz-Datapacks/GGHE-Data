@@ -5,4 +5,4 @@ data modify entity @s DeathLootTable set from storage geegaz:gghe temp.CookingPo
 loot replace entity @s weapon.mainhand kill @s
 data modify storage geegaz:gghe temp.CookingPot.Recipe.Item set from entity @s HandItems[0]
 
-function gghe:entity/delete
+tp @s ~ -1000 ~
