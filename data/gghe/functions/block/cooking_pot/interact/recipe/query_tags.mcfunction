@@ -10,6 +10,7 @@ execute if predicate gghe:tags/containers/buckets run data modify storage geegaz
 execute if predicate gghe:tags/ingredients/cooked_meats run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/cooked_meats"
 execute if predicate gghe:tags/ingredients/eggs run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/eggs"
 execute if predicate gghe:tags/ingredients/fishes run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/fishes"
+execute if predicate gghe:tags/ingredients/flowers run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/flowers"
 execute if predicate gghe:tags/ingredients/fruits run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/fruits"
 execute if predicate gghe:tags/ingredients/meats run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/meats"
 execute if predicate gghe:tags/ingredients/mushrooms run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients/mushrooms"

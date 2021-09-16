@@ -3,6 +3,7 @@
         "#gghe:ingredients/cooked_meats",
         "#gghe:ingredients/eggs",
         "#gghe:ingredients/fishes",
+        "#gghe:ingredients/flowers",
         "#gghe:ingredients/fruits",
         "#gghe:ingredients/meats",
         "#gghe:ingredients/sweets",
@@ -10,9 +11,8 @@
         "#gghe:ingredients/mushrooms",
         "#gghe:ingredients/nether_mushrooms",
 
-        "experience_bottle",
-        "dried_kelp",
         "milk_bucket",
-        "cocoa_beans"
+        "cocoa_beans",
+        "grass"
     ]
 }

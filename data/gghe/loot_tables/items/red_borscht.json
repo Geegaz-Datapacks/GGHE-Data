@@ -10,17 +10,17 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.roast_chicken.name",
+								"translate": "gghe.item.red_borscht.name",
 								"italic": false
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'roast_chicken',from:'geegaz:gghe',traits:['item','food','food/meat','food/roast_chicken']},CustomModelData:1707301}"
+							"tag": "{ctc:{id:'red_borscht',from:'geegaz:gghe',traits:['item','food','food/meat','food/red_borscht']},CustomModelData:1707306}"
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Effects:[{EffectId:23b,EffectDuration:4}]}"
+							"tag": "{Effects:[{EffectId:23b,EffectDuration:2}]}"
 						}
 					]
 				}

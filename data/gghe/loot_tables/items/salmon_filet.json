@@ -10,13 +10,13 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.roast_chicken.name",
+								"translate": "gghe.item.salmon_filet.name",
 								"italic": false
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'roast_chicken',from:'geegaz:gghe',traits:['item','food','food/meat','food/roast_chicken']},CustomModelData:1707301}"
+							"tag": "{ctc:{id:'salmon_filet',from:'geegaz:gghe',traits:['item','food','food/meat','food/salmon_filet']},CustomModelData:1707305}"
 						},
 						{
 							"function": "minecraft:set_nbt",

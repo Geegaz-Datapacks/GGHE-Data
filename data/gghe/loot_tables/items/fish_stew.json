@@ -10,17 +10,17 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.roast_chicken.name",
+								"translate": "gghe.item.fish_stew.name",
 								"italic": false
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'roast_chicken',from:'geegaz:gghe',traits:['item','food','food/meat','food/roast_chicken']},CustomModelData:1707301}"
+							"tag": "{ctc:{id:'fish_stew',from:'geegaz:gghe',traits:['item','food','food/meat','food/fish_stew']},CustomModelData:1707307}"
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Effects:[{EffectId:23b,EffectDuration:4}]}"
+							"tag": "{Effects:[{EffectId:23b,EffectDuration:2}]}"
 						}
 					]
 				}

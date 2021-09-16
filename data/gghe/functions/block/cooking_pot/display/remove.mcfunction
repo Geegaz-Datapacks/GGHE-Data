@@ -6,8 +6,8 @@ execute as @e[type=bat,tag=gghe.cooking_pot.display_provider] run function gghe:
 tag @s remove gghe.cooking_pot.display_target
 
 # Set the entity's name from the recipe item's name
-data modify entity @s CustomName set from entity @s HandItems[1].tag.display.Name
-item replace entity @s weapon.offhand with air
+data modify entity @s CustomName set from entity @s HandItems[0].tag.display.Name
+item replace entity @s weapon.mainhand with air
 
 # Remove the display item
 execute positioned ~ ~1 ~ run kill @e[type=snowball,tag=gghe.cooking_pot.display,distance=..0.5]

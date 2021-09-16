@@ -10,17 +10,17 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.roast_chicken.name",
+								"translate": "gghe.item.herbal_tea.name",
 								"italic": false
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'roast_chicken',from:'geegaz:gghe',traits:['item','food','food/meat','food/roast_chicken']},CustomModelData:1707301}"
+							"tag": "{ctc:{id:'herbal_tea',from:'geegaz:gghe',traits:['item','food','food/drink','food/herbal_tea']},CustomModelData:1707304}"
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Effects:[{EffectId:23b,EffectDuration:4}]}"
+							"tag": "{Effects:[{EffectId:10b,EffectDuration:600}]}"
 						}
 					]
 				}
