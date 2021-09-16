@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "gghe.item.colored_umbrella",
+                                "italic": false,
+                                "with": [
+                                    {
+                                        "translate": "color.minecraft.white"
+                                    },
+                                    {
+                                        "translate": "gghe.item.umbrella"
+                                    }
+                                ]
+                            }
+                        },
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ctc:{id:'umbrella',from:'geegaz:gghe',traits:[\"item\",\"umbrella\"]},CustomModelData:1707231}"
+						}
+                    ]
+                }
+            ]
+        }
+    ]
+}

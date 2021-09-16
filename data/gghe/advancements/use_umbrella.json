@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [],
+                "item": {
+                    "nbt": "{ctc:{id:\"umbrella\"}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:item/umbrella/open"
+    }
+}

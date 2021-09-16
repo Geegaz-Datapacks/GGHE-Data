@@ -49,6 +49,7 @@
 								},
 								{
 									"function": "minecraft:set_contents",
+									"type":"minecraft:shulker_block",
 									"entries": [
 										{
 											"type": "minecraft:dynamic",

@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.cooking_pot.name",
+								"translate": "gghe.item.cooking_pot",
 								"italic": false
 							}
 						},

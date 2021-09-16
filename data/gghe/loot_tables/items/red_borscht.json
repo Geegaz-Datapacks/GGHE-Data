@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.red_borscht.name",
+								"translate": "gghe.item.red_borscht",
 								"italic": false
 							}
 						},

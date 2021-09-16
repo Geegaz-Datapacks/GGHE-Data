@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.hot_cocoa.name",
+								"translate": "gghe.item.hot_cocoa",
 								"italic": false
 							}
 						},

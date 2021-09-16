@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.backpack.name",
+								"translate": "gghe.item.backpack",
 								"italic": false
 							}
 						},

@@ -22,7 +22,7 @@ An example from `gghe:items/roast_chicken`:
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "gghe.item.roast_chicken.name",
+                "translate": "gghe.item.roast_chicken",
                 "italic": false
               }
             },

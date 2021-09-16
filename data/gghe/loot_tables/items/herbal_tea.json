@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.herbal_tea.name",
+								"translate": "gghe.item.herbal_tea",
 								"italic": false
 							}
 						},

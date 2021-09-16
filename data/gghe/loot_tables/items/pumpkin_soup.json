@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"translate": "gghe.item.pumpkin_soup.name",
+								"translate": "gghe.item.pumpkin_soup",
 								"italic": false
 							}
 						},
