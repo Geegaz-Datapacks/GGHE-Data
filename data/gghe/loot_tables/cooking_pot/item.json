@@ -37,7 +37,7 @@
                   }
                 ],
                 {
-                  "nbt": "temp.CookingPot.Recipe.Item.tag.display",
+                  "nbt": "temp.CookingPot.Recipe.Item.tag.display.Name",
                   "storage": "geegaz:gghe",
                   "interpret": true,
                   "color": "white",
