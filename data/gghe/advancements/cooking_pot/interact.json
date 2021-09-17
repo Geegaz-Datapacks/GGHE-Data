@@ -11,6 +11,6 @@
 		}
 	},
 	"rewards": {
-		"function": "gghe:entity/player/interact_cooking_pot"
+		"function": "gghe:block/cooking_pot/interact"
 	}
 }

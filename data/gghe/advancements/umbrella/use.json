@@ -1,11 +1,11 @@
 {
     "criteria": {
-        "tick": {
+        "open": {
             "trigger": "minecraft:using_item",
             "conditions": {
                 "player": [],
                 "item": {
-                    "nbt": "{ctc:{id:\"umbrella\"}}"
+                    "nbt": "{ctc:{traits:[\"umbrella\"]}}"
                 }
             }
         }

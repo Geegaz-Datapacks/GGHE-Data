@@ -5,4 +5,4 @@ tag @s add gghe.raycast
 execute anchored eyes run function gghe:block/cooking_pot/create/raycast
 
 tag @s remove gghe.create
-advancement revoke @s only gghe:create_cooking_pot
+advancement revoke @s only gghe:cooking_pot/create

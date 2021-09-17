@@ -24,7 +24,7 @@
                         },
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{ctc:{id:'umbrella',from:'geegaz:gghe',traits:[\"item\",\"umbrella\"]},CustomModelData:1707231}"
+							"tag": "{ctc:{id:'white_umbrella',from:'geegaz:gghe',traits:[\"item\",\"umbrella\"]},CustomModelData:1707231}"
 						}
                     ]
                 }
