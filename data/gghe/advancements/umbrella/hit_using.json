@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "get_hit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags:[\"gghe.umbrella.open\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:item/umbrella/break"
+    }
+}
