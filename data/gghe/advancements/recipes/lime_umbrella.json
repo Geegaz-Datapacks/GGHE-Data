@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:lime_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/lime_umbrella",
+        "loot": [
+            "gghe:items/lime_umbrella"
+        ]
+    }
+}

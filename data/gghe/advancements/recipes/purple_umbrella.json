@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:purple_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/purple_umbrella",
+        "loot": [
+            "gghe:items/purple_umbrella"
+        ]
+    }
+}

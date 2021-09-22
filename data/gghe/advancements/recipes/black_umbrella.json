@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:black_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/black_umbrella",
+        "loot": [
+            "gghe:items/black_umbrella"
+        ]
+    }
+}

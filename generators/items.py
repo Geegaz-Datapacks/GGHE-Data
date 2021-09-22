@@ -32,28 +32,27 @@ class Type:
     LOOT_TABLE = "loot_tables"
     FUNCTION = "functions"
 
-
 class ItemGenerator:
 
     dev_name: str
     namespace: str
+    paths: dict
 
     items: dict
     lang: dict
-    paths: dict
 
-    def __init__(self, dev_name, namespace) -> None:
-        self.dev_name = dev_name
-        self.namespace = namespace
-
-        self.items = {}
-        self.lang = {}
-        self.paths = {
+    def __init__(self, dev_name, namespace, paths={
             Type.RECIPE: "",
             Type.ADVANCEMENT: "recipes/",
             Type.LOOT_TABLE: "items/",
             Type.FUNCTION: "recipes/"
-        }
+        }) -> None:
+        self.dev_name = dev_name
+        self.namespace = namespace
+        self.paths = paths
+
+        self.items = {}
+        self.lang = {}
 
     def register(self, item) -> None:
         self.items[item.id] = item
@@ -78,7 +77,6 @@ class ItemGenerator:
 
     def generate_all(self) -> None:
         for item in self.items.values():
-            print(item)
             self.generate(item)
 
 

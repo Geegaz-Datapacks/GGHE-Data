@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:magenta_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/magenta_umbrella",
+        "loot": [
+            "gghe:items/magenta_umbrella"
+        ]
+    }
+}

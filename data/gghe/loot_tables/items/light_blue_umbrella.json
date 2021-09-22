@@ -10,13 +10,13 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "gghe.item.white_umbrella",
+                                "translate": "gghe.item.light_blue_umbrella",
                                 "italic": false
                             }
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{ctc:{id:'white_umbrella',from:'geegaz:gghe',traits:['item', 'umbrella']},CustomModelData:1707234}"
+                            "tag": "{ctc:{id:'light_blue_umbrella',from:'geegaz:gghe',traits:['item', 'umbrella']},CustomModelData:1707244}"
                         }
                     ]
                 }
