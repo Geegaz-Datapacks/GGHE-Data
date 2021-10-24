@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:light_gray_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/light_gray_umbrella",
+        "loot": [
+            "gghe:items/light_gray_umbrella"
+        ]
+    }
+}

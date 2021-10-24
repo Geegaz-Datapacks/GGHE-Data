@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:white_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/white_umbrella",
+        "loot": [
+            "gghe:items/white_umbrella"
+        ]
+    }
+}

@@ -1,6 +1,8 @@
 # 
+execute if predicate gghe:tags/chestplates run data modify storage geegaz:gghe temp.item_tags append value "gghe:chestplates"
 execute if predicate gghe:tags/containers run data modify storage geegaz:gghe temp.item_tags append value "gghe:containers"
 execute if predicate gghe:tags/cooking_pot_valid run data modify storage geegaz:gghe temp.item_tags append value "gghe:cooking_pot_valid"
+execute if predicate gghe:tags/dyes run data modify storage geegaz:gghe temp.item_tags append value "gghe:dyes"
 execute if predicate gghe:tags/ingredients run data modify storage geegaz:gghe temp.item_tags append value "gghe:ingredients"
 # Containers
 execute if predicate gghe:tags/containers/bottles run data modify storage geegaz:gghe temp.item_tags append value "gghe:containers/bottles"

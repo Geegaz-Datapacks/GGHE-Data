@@ -1,8 +1,10 @@
 # Player tick
 
-execute if entity @s[tag=gghe.umbrella.open,advancements={gghe:use_umbrella=false}] run function gghe:item/umbrella/close
+# If the umbrella was open last tick but not anymore, close it
+execute if entity @s[tag=!gghe.umbrella.open,tag=gghe.umbrella.last_tick_open] run function gghe:item/umbrella/close
+tag @s[tag=gghe.umbrella.open] add gghe.umbrella.last_tick_open
 
 scoreboard players set @s gghe.sneak 0
 scoreboard players set @s gghe.use_coas 0
 
-advancement revoke @s only gghe:use_umbrella
+tag @s remove gghe.umbrella.open

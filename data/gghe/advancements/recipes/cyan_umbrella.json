@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:cyan_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/cyan_umbrella",
+        "loot": [
+            "gghe:items/cyan_umbrella"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:pink_umbrella"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/pink_umbrella",
+        "loot": [
+            "gghe:items/pink_umbrella"
+        ]
+    }
+}

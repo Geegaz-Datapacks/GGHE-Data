@@ -1,9 +1,25 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "flags": {
-        "is_sneaking": true
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "flags": {
+          "is_sneaking": true
+        }
+      }
+    },
+    {
+      "condition": "minecraft:value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "gghe.sneak"
+      },
+      "range": {
+        "min": 1
       }
     }
-  }
+  ]
+}

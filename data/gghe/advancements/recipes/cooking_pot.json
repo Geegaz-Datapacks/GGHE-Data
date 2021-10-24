@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gghe:cooking_pot"
+            }
+        }
+    },
+    "rewards": {
+        "function": "gghe:recipes/cooking_pot",
+        "loot": [
+            "gghe:items/cooking_pot"
+        ]
+    }
+}
